@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    background-color: #ccc;
+}
+
+.dados__paciente {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 35%;
+    gap: 0.5rem;
+}
+
+.dados__paciente  label {
+    flex: 1;
+    font-size: 1.2rem;
+    margin-left: 1rem;
+}
+
+.dados__paciente  label:first-child {
+    margin-top: 0.3rem;
+}
+
+.dados__paciente input {
+    flex: 1;
+    font-size: 1rem;
+    margin-left: 1rem;
+    border: none;
+    border-radius: 3px;
+    padding: 0 0.5rem;
+}
+
+.dados__paciente input:nth-child(2) {
+    width: 90%;
+}
+
+.dados__paciente input:nth-child(4) {
+    width: 15%;
+}
+
+.dados__paciente-botao{
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+button {
+    margin: 1rem 0;
+    padding: 0.3rem 0.5rem;
+}
