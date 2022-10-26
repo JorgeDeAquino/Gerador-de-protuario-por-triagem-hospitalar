@@ -10,7 +10,7 @@
     background-color: #ccc;
 }
 
-.dados__paciente {
+.dados__paciente-identificacao, .dados__paciente-anamnese {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -19,7 +19,7 @@
     gap: 0.5rem;
 }
 
-.dados__paciente  label {
+.dados__paciente-identificacao  label, .dados__paciente-anamnese label {
     flex: 1;
     font-size: 1.3rem;
     margin-left: 1rem;
@@ -27,11 +27,11 @@
     font-weight: 500;
 }
 
-.dados__paciente  label:first-child {
+.dados__paciente-identificacao  label:first-child {
     margin-top: 1rem;
 }
 
-.dados__paciente input {
+.dados__paciente-identificacao input, .dados__paciente-anamnese input {
     flex: 1;
     font-size: 1.1rem;
     margin-left: 1rem;
@@ -41,11 +41,11 @@
     width: 65%;
 }
 
-.dados__paciente input:nth-child(2) {
+.dados__paciente-identificacao input:nth-child(3) {
     width: 90%;
 }
 
-.dados__paciente textarea {
+.dados__paciente-anamnese textarea {
     flex: 1;
     font-size: 1.1rem;
     margin-left: 1rem;
@@ -55,7 +55,7 @@
     width: 90%;
 }
 
-.dados__paciente select {
+.dados__paciente-anamnese select, .dados__paciente-identificacao select {
     flex: 1;
     font-size: 1.1rem;
     margin-left: 1rem;
@@ -63,6 +63,20 @@
     border-radius: 4px;
     padding: 0.2rem 0.5rem;
     width: 65%;
+}
+.dados__paciente-anamnese h2, .dados__paciente-identificacao h2 {
+    flex: 1;
+    font-size: 1.5rem;
+    margin-left: 20%;
+    margin-top: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.dados__paciente-anamnese {
+    border-top: 1px solid;
+    margin-top: 1rem;
+    padding-top: 0.5rem;
 }
 
 .dados__paciente-botao{

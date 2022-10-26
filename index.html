@@ -13,15 +13,31 @@
     <main>
         <section class="container__principal">
             <div class="dados__paciente-container">
-                <div class="dados__paciente">
-                    <label for="nome__paciente"> Nome do Paciente: </label>
+                <div class="dados__paciente-identificacao">
+                    <h2> Dados do Paciente </h2>
+                    <label for="nome__paciente"> Nome Completo: </label>
                     <input required name="nome__paciente" placeholder="Nome do paciente" id="nome__paciente" type="text">
+                    
+                    <label for="idade__paciente"> Data de Nascimento: </label>
+                    <input required name="idade__paciente" placeholder="Idade" id="idade__paciente" type="date">
 
+                    <label for="sexo"> Sexo do paciente: </label>
+                    <select required name="sexo" id="sexo">
+                        <option disabled selected> Sexo do paciente? </option>
+                        <option value="feminino"> Feminino </option>
+                        <option value="masculino"> Masculino </option>
+                    </select>
+
+                    <label for="naturalidade"> Naturalidade: </label>
+                    <input required name="naturalidade" placeholder="Cidade onde nasceu " id="naturalidade" type="text">
+
+                    <label for="nome__mae"> Nome da Mãe: </label>
+                    <input required name="nome__mae" placeholder="Nome da Mãe " id="nome__mae" type="text">
+                </div>
+                <div class="dados__paciente-anamnese">
+                    <h2> Anamnese </h2>
                     <label for="queixa__paciente">Queixa principal:</label>
                     <textarea id="queixa__paciente" placeholder="Digite aqui a queixa principal do paciente..." name="queixa__paciente" rows="5" cols="33"></textarea>
-
-                    <label for="idade__paciente"> Idade: </label>
-                    <input required name="idade__paciente" placeholder="Idade" id="idade__paciente" type="number">
 
                     <label for="fr__paciente"> Frequencia Respiratoria: </label>
                     <input required name="fr__paciente" placeholder="FR" id="fr__paciente" type="number">
