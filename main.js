@@ -174,3 +174,5 @@ const escalaDeDor = [
         classificacao: "vermelho",
       },
   ];
+
+  

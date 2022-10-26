@@ -4,7 +4,7 @@
     padding: 0;
 }
 
-.container {
+.container__principal {
     width: 100%;
     height: 100%;
     background-color: #ccc;
@@ -16,35 +16,53 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
-    height: 35%;
     gap: 0.5rem;
 }
 
 .dados__paciente  label {
     flex: 1;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin-left: 1rem;
+    margin-top: 0.5rem;
+    font-weight: 500;
 }
 
 .dados__paciente  label:first-child {
-    margin-top: 0.3rem;
+    margin-top: 1rem;
 }
 
 .dados__paciente input {
     flex: 1;
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin-left: 1rem;
     border: none;
-    border-radius: 3px;
-    padding: 0 0.5rem;
+    border-radius: 4px;
+    padding: 0.2rem 0.5rem;
+    width: 65%;
 }
 
 .dados__paciente input:nth-child(2) {
     width: 90%;
 }
 
-.dados__paciente input:nth-child(4) {
-    width: 15%;
+.dados__paciente textarea {
+    flex: 1;
+    font-size: 1.1rem;
+    margin-left: 1rem;
+    border: none;
+    border-radius: 4px;
+    padding: 0.2rem 0.5rem;
+    width: 90%;
+}
+
+.dados__paciente select {
+    flex: 1;
+    font-size: 1.1rem;
+    margin-left: 1rem;
+    border: none;
+    border-radius: 4px;
+    padding: 0.2rem 0.5rem;
+    width: 65%;
 }
 
 .dados__paciente-botao{
@@ -52,9 +70,32 @@
     align-items: center;
     justify-content: center;
     display: flex;
+    margin-top: 0.5rem;
+    gap: 1rem;
 }
 
-button {
+.btn {
     margin: 1rem 0;
     padding: 0.3rem 0.5rem;
+    font-size: 1.2rem;
+    background-color: #fdfdfd;
+    border: none;
+    border-radius: 4px;
+    opacity: 0.9;
+}
+
+.btn:hover {
+    opacity: 1;
+    font-size: 1.3rem;
+    background-color: #fdfdfd;
+}
+
+.btn:active:first-child {
+    color: #fdfdfd;
+    background-color: green;
+}
+
+.btn:active:last-child {
+    color: #fdfdfd;
+    background-color: red;
 }

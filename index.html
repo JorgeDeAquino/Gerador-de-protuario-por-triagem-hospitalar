@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,23 +8,64 @@
     <link rel="stylesheet" href="style.css">
     <title>Criterios para triagem hospitalar</title>
 </head>
+
 <body>
     <main>
-        <section class="container">
+        <section class="container__principal">
             <div class="dados__paciente-container">
                 <div class="dados__paciente">
-                    <label for="nome__paciente">Nome do Paciente:</label>
-                    <input placeholder="Nome do paciente" id="nome__paciente" type="text">
-                    <label for="idade__paciente">Idade:</label>
-                    <input placeholder="Idade" id="idade__paciente" type="number">
+                    <label for="nome__paciente"> Nome do Paciente: </label>
+                    <input required name="nome__paciente" placeholder="Nome do paciente" id="nome__paciente" type="text">
+
+                    <label for="queixa__paciente">Queixa principal:</label>
+                    <textarea id="queixa__paciente" placeholder="Digite aqui a queixa principal do paciente..." name="queixa__paciente" rows="5" cols="33"></textarea>
+
+                    <label for="idade__paciente"> Idade: </label>
+                    <input required name="idade__paciente" placeholder="Idade" id="idade__paciente" type="number">
+
+                    <label for="fr__paciente"> Frequencia Respiratoria: </label>
+                    <input required name="fr__paciente" placeholder="FR" id="fr__paciente" type="number">
+
+                    <label for="fc__paciente"> Frequencia Cardiaca: </label>
+                    <input required name="fc__paciente" placeholder="FC" id="fc__paciente" type="number">
+
+                    <label for="pasis__paciente"> Pressão Arterial Sistolica: </label>
+                    <input required name="pasis__paciente" placeholder="PA Sistolica" id="pasis__paciente" type="number">
+
+                    <label for="padias__paciente"> Pressão Arterial Diastolica: </label>
+                    <input required name="padias__paciente" placeholder="PA Diastolica" id="padias__paciente" type="number">
+
+                    <label for="glicemia__paciente"> Glicemia: </label>
+                    <input required name="glicemia__paciente" placeholder="glicemia" id="glicemia__paciente" type="number">
+
+                    <label for="spo2__paciente"> Saturação de O2: </label>
+                    <input required name="spo2__paciente" placeholder="SPO2" id="spo2__paciente" type="number">
+
+                    <label for="dor__paciente"> Escala de Dor: </label>
+                    <select required name="dor__paciente" id="dor__paciente">
+                        <option disabled selected> Dor de 0 a 10? </option>
+                        <option value="0"> 0 </option>
+                        <option value="1"> 1 </option>
+                        <option value="2"> 2 </option>
+                        <option value="3"> 3 </option>
+                        <option value="4"> 4 </option>
+                        <option value="5"> 5 </option>
+                        <option value="6"> 6 </option>
+                        <option value="7"> 7 </option>
+                        <option value="8"> 8 </option>
+                        <option value="9"> 9 </option>
+                        <option value="10">10 </option>
+                    </select>
                 </div>
                 <div class="dados__paciente-botao">
-                    <button id="btn-dados__paciente" type="submit">Cadastrar</button>
+                    <button class="btn" id="btn-dados__paciente" type="submit">Cadastrar</button>
+                    <button class="btn" id="btn-limpar__dados" type="submit">Limpar</button>
                 </div>
             </div>
-            
+
         </section>
 
     </main>
 </body>
+
 </html>
