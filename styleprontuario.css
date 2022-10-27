@@ -1,0 +1,25 @@
+.prontuario__container {
+    width: 100vw;
+    height: 100vh;
+}
+
+.prontuario__cabecalho {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0 0.3rem;
+    padding: 0.1rem 0.3rem;
+    border-bottom: 1px solid;
+    width: 100%;
+    background-color: #ccc999;
+}
+
+.prontuario__cabecalho span{
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.prontuario__cabecalho p{
+    font-size: 1.5rem;
+    font-weight: bold;
+}

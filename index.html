@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleprontuario.css">
+    <script src="./main.js" defer></script>
     <title>Criterios para triagem hospitalar</title>
 </head>
 
@@ -51,6 +53,9 @@
                     <label for="padias__paciente"> Pressão Arterial Diastolica: </label>
                     <input required name="padias__paciente" placeholder="PA Diastolica" id="padias__paciente" type="number">
 
+                    <label for="temperatura__paciente"> Temperatura: </label>
+                    <input required name="temperatura__paciente" placeholder="temperatura" id="temperatura__paciente" type="number">
+
                     <label for="glicemia__paciente"> Glicemia: </label>
                     <input required name="glicemia__paciente" placeholder="glicemia" id="glicemia__paciente" type="number">
 
@@ -74,13 +79,48 @@
                     </select>
                 </div>
                 <div class="dados__paciente-botao">
-                    <button class="btn" id="btn-dados__paciente" type="submit">Cadastrar</button>
-                    <button class="btn" id="btn-limpar__dados" type="submit">Limpar</button>
+                    <button class="btn" id="btn-dados__paciente" type="submit"> Gerar </button>
+                    <button class="btn" id="btn-limpar__dados" type="submit"> Limpar </button>
                 </div>
             </div>
-
         </section>
+        <section class="prontuario__container">
+            <div class="prontuario__informacoes">
+                <div class="prontuario__cabecalho">
+                    <p>Nome: <span id="nome__prontuario__cabecalho"></span></p>
+                    <p>Data de Nascimento: <span id="data__nascimento__prontuario"></span></p>
+                    <p>Filiação: <span id="filiacao__prontuario"></span></p>
+                    <p>Sexo: <span id="sexo__prontuario__cabecalho"></span></p>
+                    <p>Naturalidade: <span id="naturalidade__prontuario"></span></p>
+                </div>
+                <div class="prontuario__informacoes">
+                    <p>
+                        Paciente <Span id="nome__prontuario"></Span>, do sexo <span id="sexo__prontuario"></span>, com <span id="idade__prontuario"></span>, chegou apresentando queixa de <span id="queixa__prontuario"></span>.
+                        <br>
+                        Apresentando os seguintes dados vitais:
+                    </p>
+                    <p>
+                        Frquencia Respiratoria: <span id="fr__prontuario"></span> irpm.
+                    </p>
+                    <p>
+                        Pressão Arterial: <span id="pa__sis__prontuario"></span>/<span id="pa__dia__prontuario"></span> mmHg.
+                    </p>
+                    <p>
+                        Temperatura: <span id="temperatura__prontuario"></span>°.
+                    </p>
+                    <p>
+                        Glicemia: <span id="glicemia__prontuario"></span> mg/dL.
+                    </p>
+                    <p>
+                        Saturação de O2: <span id="spo2__prontuario"></span>%.
+                    </p>
+                    <p>
+                        Escala de Dor: <span id="dor__prontuario"></span>.
+                    </p>
+                </div>
 
+            </div>
+        </section>
     </main>
 </body>
 
