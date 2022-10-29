@@ -35,6 +35,15 @@
     margin-bottom: 0.5rem;
 }
 
+.local__assinatura {
+    margin-top: 3rem;
+    margin-left: 5%;
+}
+
+.local__assinatura-texto {
+    margin-left: 10%;
+}
+
 .prontuario__informacoes p:first-child {
     margin-top: 1rem;
 }
@@ -46,4 +55,42 @@
 
 .prontuario__informacoes li {
     padding-left: 0.7rem;
+}
+
+.prontuario__botao__container {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+#btn__imprimir, #btn__voltar {
+    flex: 0.5;
+    background-color: #fdfdfd;
+    margin-top: 3rem;
+    border: 1px solid #ccc999;
+    color: #ccc999;
+}
+
+.hide {
+    display: none;
+}
+
+
+/* responsividade */
+@media screen and (min-width: 700px) {
+    .prontuario__botao__container {
+        margin-top: 5%;
+    }
+
+    .local__assinatura {
+        margin-left: 6%;
+    }
+    
+    .local__assinatura-texto {
+        margin-left: 9%;
+    }
+    
 }

@@ -3,6 +3,14 @@
  
   const botaoGerar = document.querySelector("#btn-dados__paciente");
 
+  const botaoImprimir = document.querySelector("#btn__imprimir");
+ 
+  const botaoVoltar = document.getElementById("btn__voltar"); 
+
+  const btnReset = document.getElementById("btn-reset");
+
+  const prontuarioBotaoContainer = document.querySelector('.prontuario__botao__container');
+
   const dadosContainer = document.querySelector('.dados__paciente-container');
 
 const prontuarioContainer = document.querySelector('.prontuario__container');
@@ -116,6 +124,12 @@ botaoGerar.addEventListener("click", () => {
   trasicaoTela()
 })
 
+botaoImprimir.addEventListener("click", () => {
+  window.print();
+})
 
+botaoVoltar.addEventListener("click", function () {
+  location.reload();
+});
 
 
