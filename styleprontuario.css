@@ -1,25 +1,49 @@
 .prontuario__container {
-    width: 100vw;
-    height: 100vh;
+    border: 2px solid black;
+    height: 100%;
+    min-height: 100vh;
+    width: 100%;
 }
 
 .prontuario__cabecalho {
+    align-items: center;
+    background-color: #ccc999;
+    border-bottom: 1px solid;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
     gap: 0 0.3rem;
+    justify-content: space-between;
     padding: 0.1rem 0.3rem;
-    border-bottom: 1px solid;
-    width: 100%;
-    background-color: #ccc999;
 }
 
-.prontuario__cabecalho span{
-    font-size: 1.4rem;
+.prontuario__cabecalho span, p{
+    font-size: 1.5rem;
     font-weight: 500;
 }
 .prontuario__cabecalho p{
-    font-size: 1.5rem;
     font-weight: bold;
+}
+
+.prontuario__informacoes {
+    padding: 0 0.5rem;
+    width: 100%;
+}
+
+.prontuario__informacoes p {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.prontuario__informacoes p:first-child {
+    margin-top: 1rem;
+}
+
+
+.prontuario__informacoes span {
+    font-weight: bold;
+}
+
+.prontuario__informacoes li {
+    padding-left: 0.7rem;
 }
