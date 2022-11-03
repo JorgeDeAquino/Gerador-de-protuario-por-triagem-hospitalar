@@ -6,14 +6,22 @@
 }
 
 .prontuario__cabecalho {
-    align-items: center;
-    background-color: #ccc999;
+    background-color: #4a9ae9;
     border-bottom: 1px solid;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     gap: 0 0.3rem;
-    justify-content: space-between;
+    justify-content: center;
     padding: 0.1rem 0.3rem;
+    flex: 1;
+}
+
+.prontuario__cabecalho div {
+    justify-content: space-between;
+    margin: 0.5rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .prontuario__cabecalho span, p{
@@ -25,11 +33,13 @@
 }
 
 .prontuario__informacoes {
+    background-color: #afcdea;
     padding: 0 0.5rem;
     width: 100%;
 }
 
 .prontuario__informacoes p {
+    margin: 0 1rem;
     font-size: 1.4rem;
     line-height: 2rem;
     margin-bottom: 0.5rem;
@@ -45,7 +55,7 @@
 }
 
 .prontuario__informacoes p:first-child {
-    margin-top: 1rem;
+    padding-top: 1rem;
 }
 
 
@@ -55,6 +65,7 @@
 
 .prontuario__informacoes li {
     padding-left: 0.7rem;
+    list-style: none;
 }
 
 .prontuario__botao__container {
@@ -63,7 +74,7 @@
     flex: 1;
     gap: 1rem;
     justify-content: center;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
 }
 
 #btn__imprimir, #btn__voltar {
@@ -71,7 +82,6 @@
     background-color: #fdfdfd;
     margin-top: 3rem;
     border: 1px solid #ccc999;
-    color: #ccc999;
 }
 
 .hide {
