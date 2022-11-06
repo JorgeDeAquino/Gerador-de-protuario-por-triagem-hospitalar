@@ -6,7 +6,7 @@
 }
 
 .prontuario__cabecalho {
-    background-color: #4a9ae9;
+    background-color: #cadeed;
     border-bottom: 1px solid;
     display: flex;
     flex-direction: column;
@@ -33,7 +33,7 @@
 }
 
 .prontuario__informacoes {
-    background-color: #afcdea;
+    background-color: #dbecf4;
     padding: 0 0.5rem;
     width: 100%;
 }

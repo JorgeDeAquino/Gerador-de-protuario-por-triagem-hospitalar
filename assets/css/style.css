@@ -5,13 +5,14 @@
 }
 
 .container__principal {
-    background-color: #4a9ae9;
+    background-color: #b7d0e1;
     height: 100%;
     width: 100%;
 }
 
 .dados__paciente-container {
     margin: 0 1rem;
+    padding-top: 1rem;
 }
 
 .dados__paciente legend, .dados__paciente-endereco legend, .anamnese legend {
